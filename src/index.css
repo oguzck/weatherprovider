@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.weather-cards {
+  display: inline-block;
+  width: 180px;
+  height: 160px;
+  margin: 0px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  border-collapse:inherit;
+}
+
