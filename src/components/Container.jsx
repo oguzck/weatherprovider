@@ -12,7 +12,7 @@ export default function Container() {
     if (!weatherData) {
         return <div>Loading...</div>;
     }
-
+    //bu fonksiyon contextten dönen weatherdatayı haftalık günler , en yüksek ve en düşük sıcaklık değeri , description ve icon olarak ayırmamıza yarar 
     const dailyData = weatherData.list.reduce((acc, data, index) => {
         const date = data.dt_txt.split(' ')[0];
         const time = data.dt_txt.split(' ')[1];

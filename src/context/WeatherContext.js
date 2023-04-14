@@ -8,6 +8,7 @@ export const WeatherProvider = ({children}) => {
   const [weatherData, setWeatherData] = useState(null);
   const APIkey = '9377e05a248f8448b63cfef7e28f0d84';
 
+  // dropdownlistten değişen her değer için başka bir şehre istek atılır
   useEffect(() => {
     const BaseURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&lang=en&appid=${APIkey}&cnt=40`;
     axios.get(BaseURL)
